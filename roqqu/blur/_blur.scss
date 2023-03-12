@@ -3,6 +3,7 @@
 =============================================*/
 @mixin blur($amount) {
   filter: blur($amount);
+  -webkit-filter: blur($amount);
 }
 
 .blur{
