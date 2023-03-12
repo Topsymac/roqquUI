@@ -34,9 +34,6 @@ $shadow: (
       }
     }
   }
-  .shadow-#{$key} {
-    box-shadow: $val;
-  }
 }
 
 /*=====  End of Shadows  ======*/
