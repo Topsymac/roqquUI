@@ -1,7 +1,13 @@
 /*=============================================
 =            blur            =
 =============================================*/
+@mixin blur($amount) {
+  filter: blur($amount);
+}
 
-$blur: 5px;
+.blur{
+    @include blur(5px);
+}
+
 
 /*=====  End of blur  ======*/
