@@ -1,0 +1,50 @@
+$blueFountain: #2764FF;
+$rockBlack: #1C2127;
+$primePink: #FB0B67;
+$gumYellow: #FFB918;
+$chillBlue: #85D1F0;
+$angelWhite: #ffffff;
+$borderGrey: #F5F5FE;
+$inputBorder: #CFD9E4;
+// Secondary
+$pinkTint: #530D35;
+$pinkTint2: #EA89B1;
+$pinkTint3: #F9E5EC;
+$blueTint: #213B93;
+$blueTint2:#ADC0FA;
+$blueTint3:#EAF0FE;
+$blackTint:#000000;
+$blackTint2:#737A91;
+$blackTint3:#A7B1BC;
+$yellowTint:#C49344;
+$yellowTint2:#F8D48B;
+$yellowTint3:#FCEED4;
+$chillTint:#5C8DA4;
+$chillTint2:#B9DFEF;
+$chillTint3:#DAEDF6;
+// Support
+$success:#25C26E;
+$alert:#FF554A;
+$warning:#F0AD4E;
+$info:#0066F5;
+// DarkMode BG
+$sidebar:#0066F5;
+$App-bg:#1C2127;
+$card-bg:#20252B;
+$card-stroke:#262932;
+$change-bg:#262B31;
+$input-stroke:#373B3F;
+$disabled:#393D41;
+// LightMode BG
+$lightmode-sidebar:#FFFFFF;
+$lightmode-App-bg:#F8F8F9;
+$lightmode-card-bg:$lightmode-sidebar;
+$lightmode-card-stroke:#F1F1F1;
+$lightmode-change-bg: $lightmode-App-bg;
+// Gradient
+// $g1:#483BEB #7847E1 #DD568D;
+$g1: linear-gradient(90deg, #483BEB 0%, #7847E1 47.92%, #DD568D 96.35%);
+$g2: linear-gradient(109.12deg, #C0CFFE 0.42%, #F3DFF4 57.74%, #F9D8E5 98.62%);
+$g3: linear-gradient(109.12deg, #ABE2F3 0.42%, #BDE4E5 39.7%, #EBE9D0 102.33%);
+$g4:linear-gradient(70.58deg, #6179FA 0%, #98AAFE 39.58%, #FEC536 100%);
+$colors: ( "primary_blue": $blueFountain, "primary_black": $rockBlack, "primary_pink": $primePink, "primary_yellow": $gumYellow, "primary_chill": $chillBlue, "primary_white": $angelWhite, "border_grey": $borderGrey, "input_border": $inputBorder, "secondary_pink": $pinkTint, "secondary_blue": $blueTint, "secondary_black": $blackTint, "secondary_yellow": $yellowTint, "secondary_chill": $chillTint);
