@@ -1,0 +1,173 @@
+
+$spacing: (
+  "padding": (
+    "prefix": "p",
+    "values": (
+      "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  ),
+  "padding-left": (
+    "prefix": "pl",
+    "values": (
+     "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  ),
+  //padding-right
+  "padding-right":
+    (
+      "prefix": "pr",
+      "values": (
+        "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+      ),
+    ),
+  "padding-top": (
+    "prefix": "pt",
+    "values": (
+      "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  ),
+  "padding-bottom": (
+    "prefix": "pb",
+    "values": (
+      "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  ),
+  "margin": (
+    "prefix": "m",
+    "values": (
+      "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  ),
+  "margin-left": (
+    "prefix": "ml",
+    "values": (
+      "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  ),
+  "margin-right": (
+    "prefix": "mr",
+    "values": (
+      "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  ),
+  "margin-top": (
+    "prefix": "mt",
+    "values": (
+      "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  ),
+  "margin-bottom": (
+    "prefix": "mb",
+    "values": (
+      "0": 0,
+      "1": 4px,
+      "2": 12px,
+      "3": 16px,
+      "4": 24px,
+      "5": 32px,
+      "6": 40px,
+      "7": 48px,
+      "8": 56px,
+      "9": 64px,
+    ),
+  )
+);
+
+// generate utility classes
+@each $property, $map in $spacing {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $k, $v in $values {
+    @if ($k == "default") {
+      .#{$prefix} {
+        #{$property}: $v;
+      }
+    } @else {
+      .#{$prefix}-#{$k} {
+        #{$property}: $v;
+      }
+    }
+  }
+}

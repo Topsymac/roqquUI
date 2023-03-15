@@ -1318,3 +1318,35 @@
 }
 
 /*=====  End of buttons  ======*/
+
+.pr-1 {
+  padding-right: 4px;
+}
+
+.pr-2 {
+  padding-right: 12px;
+}
+
+.pr-3 {
+  padding-right: 16px;
+}
+
+.pb-5 {
+  padding-bottom: 32px;
+}
+
+.mr-1 {
+  margin-right: 4px;
+}
+
+.mr-2 {
+  margin-right: 12px;
+}
+
+.mr-3 {
+  margin-right: 16px;
+}
+
+.mr-9 {
+  margin-right: 64px;
+}
