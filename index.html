@@ -1,15 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roqqu Ui</title>
-</head>
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      /* .btn:disabled{
+            color: red;
+            font-size: 30px;
+        } */
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class="btn radius-pill" disabled>
+        <!-- <a href="dfsj"> -->
+        Click Active
+        <!-- </a> -->
+      </button>
+    </div>
 
-<body>
+    <button type="button" class="blur">Button</button>
+    <button type="button" class="radius-xlg">Button</button>
 
-</body>
+    <!-- // PRIMARY BUTTONS -->
+    <button type="button" class="btn-primary-sm">Button</button>
+    <button type="button" class="btn-primary-sm btn-primary-sm-hover radius-sm">
+      Small Button hover
+    </button>
+    <button type="button" class="btn-primary-sm btn-primary-sm-active">
+      Small Button active
+    </button>
+    <button
+      type="button"
+      class="btn-primary-sm btn-primary-sm-disabled radius-xxlg"
+    >
+      Small Button disabled
+    </button>
+    <button type="button" class="btn-primary-sm btn-primary-sm-loading">
+      Small Button loading
+    </button>
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <button type="button" class="btn-primary-m">Button</button>
+    <button type="button" class="btn-primary-m btn-primary-m-hover radius-sm">
+      Medium Button hover
+    </button>
+    <button type="button" class="btn-primary-m btn-primary-m-active">
+      Medium Button active
+    </button>
+    <button
+      type="button"
+      class="btn-primary-m btn-primary-m-disabled radius-xxlg"
+    >
+      Medium Button disabled
+    </button>
+    <button type="button" class="btn-primary-m btn-primary-m-loading">
+      Medium Button loading
+    </button>
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <button type="button" class="btn-primary-lg">Button</button>
+    <button type="button" class="btn-primary-lg btn-primary-lg-hover radius-sm">
+      Large Button hover
+    </button>
+    <button type="button" class="btn-primary-lg btn-primary-lg-active">
+      Large Button active
+    </button>
+    <button
+      type="button"
+      class="btn-primary-lg btn-primary-lg-disabled radius-xxlg"
+      disabled
+    >
+      Large Button disabled
+    </button>
+    <button type="button" class="btn-primary-lg btn-primary-lg-loading">
+      Large Button loading
+    </button>
+    <br />
+    <br />
+    <br />
 
+    <!-- <div class="box-shadow radius-xlg" style="background-color: blue">
+      Lorem ipsum dolor sit amet. btn-primary-m
+    </div> -->
+
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <!--  SECONDARY button  -->
+
+    <button type="button" class="btn-secondary-sm">Button</button>
+    <button
+      type="button"
+      class="btn-secondary-sm btn-secondary-sm-hover radius-sm"
+    >
+      Small Button hover
+    </button>
+    <button type="button" class="btn-secondary-sm btn-secondary-sm-active">
+      Small Button active
+    </button>
+    <button
+      type="button"
+      class="btn-secondary-sm btn-secondary-sm-disabled radius-xxlg"
+    >
+      Small Button disabled
+    </button>
+    <button type="button" class="btn-secondary-sm btn-secondary-sm-loading">
+      Small Button loading
+    </button>
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <button type="button" class="btn-secondary-m">Button</button>
+    <button
+      type="button"
+      class="btn-secondary-m btn-secondary-m-hover radius-sm"
+    >
+      Medium Button hover
+    </button>
+    <button type="button" class="btn-secondary-m btn-secondary-m-active">
+      Medium Button active
+    </button>
+    <button
+      type="button"
+      class="btn-secondary-m btn-secondary-m-disabled radius-xxlg"
+    >
+      Medium Button disabled
+    </button>
+    <button type="button" class="btn-secondary-m btn-secondary-m-loading">
+      Medium Button loading
+    </button>
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <button type="button" class="btn-secondary-lg">Button</button>
+    <button
+      type="button"
+      class="btn-secondary-lg btn-secondary-lg-hover radius-sm"
+    >
+      Large Button hover
+    </button>
+    <button type="button" class="btn-secondary-lg btn-secondary-lg-active">
+      Large Button active
+    </button>
+    <button
+      type="button"
+      class="btn-secondary-lg btn-secondary-lg-disabled radius-xxlg"
+      disabled
+    >
+      Large Button disabled
+    </button>
+    <button type="button" class="btn-secondary-lg btn-secondary-lg-loading">
+      Large Button loading
+    </button>
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <!--   OUTLINED LIGHT button  -->
+
+    <button type="button" class="btn-outlined-light-sm">Button</button>
+    <button
+      type="button"
+      class="btn-outlined-light-sm btn-outlined-light-sm-hover radius-sm"
+    >
+      Small Button outline hover
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-sm btn-outlined-light-sm-active"
+    >
+      Small Button active
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-sm btn-outlined-light-sm-disabled radius-xxlg"
+    >
+      Small Button disabled
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-sm btn-outlined-light-sm-loading"
+    >
+      Small Button loading
+    </button>
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <button type="button" class="btn-outlined-light-m">Button</button>
+    <button
+      type="button"
+      class="btn-outlined-light-m btn-outlined-light-m-hover radius-sm"
+    >
+      Medium Button hover
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-m btn-outlined-light-m-active"
+    >
+      Medium Button active
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-m btn-outlined-light-m-disabled radius-xxlg"
+    >
+      Medium Button disabled
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-m btn-outlined-light-m-loading"
+    >
+      Medium Button loading
+    </button>
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <button type="button" class="btn-outlined-light-lg">Button</button>
+    <button
+      type="button"
+      class="btn-outlined-light-lg btn-outlined-light-lg-hover radius-sm"
+    >
+      Large Button hover
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-lg btn-outlined-light-lg-active"
+    >
+      Large Button active
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-lg btn-outlined-light-lg-disabled radius-xxlg"
+      disabled
+    >
+      Large Button disabled
+    </button>
+    <button
+      type="button"
+      class="btn-outlined-light-lg btn-outlined-light-lg-loading"
+    >
+      Large Button loading
+    </button>
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <!--  -->
+    <!--  -->
+    <!--   OUTLINED Dark button  -->
+    <div style="background: #1c2127;padding: 20px;">
+      <button type="button" class="btn-outlined-dark-sm">Button</button>
+      <button
+        type="button"
+        class="btn-outlined-dark-sm btn-outlined-dark-sm-hover radius-sm"
+      >
+        Small Button outline dark hover
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-sm btn-outlined-dark-sm-active"
+      >
+        Small Button active
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-sm btn-outlined-dark-sm-disabled radius-xxlg"
+      >
+        Small Button disabled
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-sm btn-outlined-dark-sm-loading"
+      >
+        Small Button loading
+      </button>
+      <br />
+      <br />
+      <br />
+      <!--  -->
+      <!--  -->
+      <button type="button" class="btn-outlined-dark-m">Button</button>
+      <button
+        type="button"
+        class="btn-outlined-dark-m btn-outlined-dark-m-hover radius-sm"
+      >
+        Medium Button hover
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-m btn-outlined-dark-m-active"
+      >
+        Medium Button active
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-m btn-outlined-dark-m-disabled radius-xxlg"
+      >
+        Medium Button disabled
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-m btn-outlined-dark-m-loading"
+      >
+        Medium Button loading
+      </button>
+      <br />
+      <br />
+      <br />
+      <!--  -->
+      <!--  -->
+      <button type="button" class="btn-outlined-dark-lg">Button</button>
+      <button
+        type="button"
+        class="btn-outlined-dark-lg btn-outlined-dark-lg-hover radius-sm"
+      >
+        Large Button hover
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-lg btn-outlined-dark-lg-active"
+      >
+        Large Button active
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-lg btn-outlined-dark-lg-disabled radius-xxlg"
+        disabled
+      >
+        Large Button disabled
+      </button>
+      <button
+        type="button"
+        class="btn-outlined-dark-lg btn-outlined-dark-lg-loading"
+      >
+        Large Button loading
+      </button>
+    </div>
+    <br />
+    <br />
+
+
+<br />
+      <br />
+      <br />
+      <!--  -->
+      <!-- LINK -->
+
+<a href="" class="link-sm">Button sm</a>
+<a href="" class="link-sm link-sm-hover">Button</a>
+<a href="" class="link-sm link-sm-active">Button</a>
+<a href="" class="link-sm link-sm-disabled">Button</a>
+<a href="" class="link-sm link-sm-loading">Button</a>
+
+<br>
+<br>
+<a href="" class="link-m">Button</a>
+<a href="" class="link-m link-m-hover">Button</a>
+<a href="" class="link-m link-m-active">Button</a>
+<a href="" class="link-m link-m-disabled">Button</a>
+<a href="" class="link-m link-m-loading">Button</a>
+
+<br>
+<br>
+<a href="" class="link-lg">Button</a>
+<a href="" class="link-lg link-lg-hover">Button</a>
+<a href="" class="link-lg link-lg-active">Button</a>
+<a href="" class="link-lg link-lg-disabled">Button</a>
+<a href="" class="link-lg link-lg-loading">Button</a>
+<br>
+<br>
+<br>
+  </body>
 </html>

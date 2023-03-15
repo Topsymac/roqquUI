@@ -1,0 +1,345 @@
+/*=============================================
+=            buttons            =
+=============================================*/
+
+// for active
+// .angle-white {
+//   background: #ffffff;
+//   width: 24px;
+//   height: 24px;
+//   opacity: 0.24;
+//   border-radius: 50%;
+//   -webkit-border-radius: 50%;
+//   -moz-border-radius: 50%;
+//   -ms-border-radius: 50%;
+//   -o-border-radius: 50%;
+// }
+%angle-white {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 24px;
+  height: 24px;
+  opacity: 0.24;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+// Loading icon
+.loading-icon {
+  background: #fdfdfd;
+  width: 12.68px;
+  height: 13.33px;
+}
+
+@mixin btn() {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+}
+
+// .btn {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 0;
+//   height: 0;
+//   border-radius: 50%;
+//   background-color: rgba(255, 0, 0, 0.5);
+//   transition: all 0.3s ease;
+//   pointer-events: none;
+//   z-index: -1;
+// }
+@each $key, $val in $btn-bg-primary {
+  @if ($key == "default") {
+    .btn-primary-sm {
+      @include btn();
+      font-size: 14px;
+      padding: 8px;
+      background: $val;
+    };
+    .btn-primary-m{
+      @include btn();
+      font-size: 16px;
+      padding: 8px 16px;
+      background: $val;
+    };
+.btn-primary-lg{
+      @include btn();
+      font-size: 16px;
+      padding: 16px;
+      background: $val;
+    }
+  }
+  @if ($key == "hover") {
+    .btn-primary-sm-#{$key} {
+      font-size: 14px;
+      padding: 8px;
+      &:hover {
+        @include btn();
+        background: $val;
+      }
+    };
+    .btn-primary-m-#{$key}{
+      font-size: 16px;
+      padding: 8px 16px;
+      &:hover {
+        @include btn();
+        background: $val;
+      }
+    };
+    .btn-primary-lg-#{$key}{
+      font-size: 16px;
+      padding:16px;
+      &:hover {
+        @include btn();
+        background: $val;
+      }
+    }
+  }
+  @if ($key == "active") {
+    .btn-primary-sm-#{$key} {
+      font-size: 14px;
+      padding: 8px;
+      @include btn();
+      background: $val;
+      &:active::before {
+        @extend %angle-white;
+      }
+    };
+    .btn-primary-m-#{$key} {
+      font-size: 16px;
+      padding: 8px 16px;
+      @include btn();
+      background: $val;
+      &:active::before {
+        @extend %angle-white;
+      }
+    };
+    .btn-primary-lg-#{$key} {
+      font-size: 16px;
+      padding: 16px;
+      @include btn();
+      background: $val;
+      &:active::before {
+        @extend %angle-white;
+      }
+    }
+  }
+
+  @if ($key == "disabled") {
+    .btn-primary-sm-disabled {
+      // &:disabled {
+      @include btn();
+      font-size: 14px;
+      padding: 8px;
+      background: $val !important;
+      cursor: not-allowed;
+      pointer-events: unset;
+      // }
+    };
+    .btn-primary-m-#{$key} {
+      // &:disabled {
+      @include btn();
+      font-size: 16px;
+      padding: 8px 16px;
+      background: $val !important;
+      cursor: not-allowed;
+      pointer-events: unset;
+      // }
+    }
+    .btn-primary-lg-#{$key} {
+      &:disabled {
+      @include btn();
+      font-size: 16px;
+      padding: 16px;
+      background: $val !important;
+      cursor: not-allowed;
+      pointer-events: unset;
+      }
+    }
+  }
+
+  @if ($key == "loading") {
+    .btn-primary-sm-#{$key} {
+      @include btn();
+      font-size: 14px;
+      padding: 8px;
+      // &:active {
+      padding: 8px;
+      font-weight: unset;
+      background: $val;
+      // }
+    }
+    .btn-primary-m-#{$key} {
+      @include btn();
+      font-size: 16px;
+      padding: 8px 16px;
+      font-weight: unset;
+      background: $val;
+    };
+    .btn-primary-m-#{$key} {
+      @include btn();
+      font-size: 16px;
+      padding: 16px;
+      font-weight: unset;
+      background: $val;
+    }
+  }
+  // .btn-primary-sm-#{$key} {
+  //   @include btn();
+  //   // border: $base-border-thickness solid $val;
+  //   &:active {
+  //     background: $val;
+  //   }
+  // }
+  // .btn-primary-sm-#{$key}{
+  //   @include btn ();
+  //   // color: light-comp($val);
+  //   &:disabled{
+  //       background: $val;
+  //   }
+  // }
+  // .btn-primary-sm-#{$key}{
+  //   @include btn ();
+  //   background:$val;
+  // }
+}
+
+// // button small default
+// @mixin button-primary-sm-default {
+//   // line-height: 16px;
+
+//   background: linear-gradient(
+//     90deg,
+//     #483beb 0%,
+//     #7847e1 47.92%,
+//     #dd568d 96.35%
+//   );
+//   padding: 8px;
+//   border-radius: 8px;
+//   -webkit-border-radius: 8px;
+//   -moz-border-radius: 8px;
+//   -ms-border-radius: 8px;
+//   -o-border-radius: 8px;
+// }
+
+// @mixin btn-primary-sm-hover {
+//   font-size: 14px;
+//   font-weight: 700;
+//   gap: 8px;
+//   color: white;
+//   background: linear-gradient(90deg, #dd568d 0%, #7847e1 47.92%, #3e32c1 100%);
+//   padding: 8px;
+//   border-radius: 8px;
+//   -webkit-border-radius: 8px;
+//   -moz-border-radius: 8px;
+//   -ms-border-radius: 8px;
+//   -o-border-radius: 8px;
+// }
+
+// @mixin button-primary-sm-active {
+//   font-size: 14px;
+//   font-weight: 700;
+//   gap: 8px;
+//   // line-height: 16px;
+//   color: white;
+//   background: linear-gradient(
+//     90deg,
+//     #483beb 0%,
+//     #7847e1 47.92%,
+//     #dd568d 96.35%
+//   );
+//   padding: 8px;
+//   border-radius: 8px;
+//   -webkit-border-radius: 8px;
+//   -moz-border-radius: 8px;
+//   -ms-border-radius: 8px;
+//   -o-border-radius: 8px;
+
+//   @extend .angle-white;
+// }
+
+// @mixin button-primary-sm-disable {
+//   font-size: unset;
+//   font-weight: unset;
+//   gap: 8px;
+//   // line-height: 16px;
+//   color: white;
+//   background: linear-gradient(
+//     90deg,
+//     rgba(221, 86, 141, 0.24) 0%,
+//     rgba(120, 71, 225, 0.24) 47.92%,
+//     rgba(62, 50, 193, 0.24) 100%
+//   );
+//   padding: 8px;
+//   border-radius: 8px;
+//   -webkit-border-radius: 8px;
+//   -moz-border-radius: 8px;
+//   -ms-border-radius: 8px;
+//   -o-border-radius: 8px;
+// }
+
+// // loading
+
+// @mixin button-primary-sm-loading {
+//   font-size: unset;
+//   font-weight: unset;
+//   gap: 8px;
+//   // line-height: 16px;
+//   color: white;
+//   background: linear-gradient(
+//     90deg,
+//     #483beb 0%,
+//     #7847e1 47.92%,
+//     #dd568d 96.35%
+//   );
+//   padding: 8px;
+//   border-radius: 8px;
+//   -webkit-border-radius: 8px;
+//   -moz-border-radius: 8px;
+//   -ms-border-radius: 8px;
+//   -o-border-radius: 8px;
+
+// }
+
+// $button: (
+//   "box-shadow": (
+//     "prefix": "button-primary-sm",
+//     "values": (
+//       "default": 0px 0px 1px rgba(12, 26, 75, 0.1),
+//     ),
+//   ),
+// );
+
+// @each $property, $map in $button {
+//   $prefix: map-get($map, "prefix");
+//   $values: map-get($map, "values");
+
+//   @each $k, $v in $values {
+//     @if ($k == "default") {
+//       .#{$prefix} {
+//         #{$property}: $v;
+//       }
+//     } @else {
+//       .#{$prefix}-#{$k} {
+//         #{$property}: $v;
+//       }
+//     }
+//   }
+// }
+
+/*=====  End of buttons  ======*/

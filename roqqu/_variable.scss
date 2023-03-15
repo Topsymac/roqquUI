@@ -7,3 +7,54 @@ $radius: (
 );
 
 
+// Button background color for primary
+$btn-bg-primary: (
+   'default': linear-gradient(90deg,#483beb 0%,#7847e1 47.92%,#dd568d 96.35%),
+   'hover': linear-gradient(90deg, #dd568d 0%, #7847e1 47.92%, #3e32c1 100%),
+   'active':linear-gradient(90deg,#483beb 0%,#7847e1 47.92%,#dd568d 96.35%),
+   'disabled':linear-gradient(90deg,rgba(221, 86, 141, 0.24) 0%,rgba(120, 71, 225, 0.24) 47.92%,rgba(62, 50, 193, 0.24) 100%),
+   'loading':linear-gradient(90deg,#483beb 0%,#7847e1 47.92%,#dd568d 96.35%)
+);
+
+// Button background color for secondary
+$btn-bg-secondary:(
+  'default':#2764FF,
+  'hover':#213B93,
+  'active':#2764FF,
+  'disabled': rgba(39, 100, 255, 0.24),
+  'loading':#2764FF
+);
+
+// Outline light button
+$btn-outline-light:(
+  'default':1px solid #2764FF,
+  'hover':1px solid #213B93, // text color is different
+  'active':1px solid #2764FF,
+  'disabled':1px solid rgba(39, 100, 255, 0.24),
+  'loading':1px solid #2764FF
+);
+
+// cross check 
+$btn-outline-dark:(
+  'default':1px solid #737A91,
+  'hover':1px solid #737A91, //background color is different
+  'active':1px solid #737A91,
+  'disabled':1px solid #393D41,
+  'loading':1px solid #737A91
+);
+
+$link:(
+  'default':#2764FF,
+  'hover':#213B93, // text color is different
+  'active':#2764FF,
+  'disabled':#2764FF,
+  'loading':#2764FF
+);
+
+// $btn-bg-secondary:(
+//   'default':,
+//   'hover':,
+//   'active':,
+//   'disabled':,
+//   'loading':
+// )

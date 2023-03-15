@@ -1,0 +1,177 @@
+/*=============================================
+=            buttons            =
+=============================================*/
+
+%angle-link {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background: #2764ff;
+  opacity: 0.16;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+// Loading icon
+.loading-icon {
+  background: #fdfdfd;
+  width: 12.68px;
+  height: 13.33px;
+}
+
+@mixin link() {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+}
+
+@each $key, $val in $link {
+  @if ($key == "default") {
+    .link-sm {
+      @include link();
+      font-size: 14px;
+      text-decoration: none;
+      color: $val;
+    }
+    .link-m {
+      @include link();
+      font-size: 16px;
+      text-decoration: none;
+      color: $val;
+    }
+    .link-lg {
+      @include link();
+      font-size: 16px;
+      text-decoration: none;
+      color: $val;
+    }
+  }
+  @if ($key == "hover") {
+    .link-sm-#{$key} {
+      font-size: 14px;
+      &:hover {
+        @include link();
+        text-decoration: none;
+        color: $val;
+      }
+    }
+    .link-m-#{$key} {
+      font-size: 16px;
+      &:hover {
+        @include link();
+        text-decoration: none;
+        color: #213b93;
+        color: $val;
+      }
+    }
+    .link-lg-#{$key} {
+      font-size: 16px;
+      &:hover {
+        @include link();
+        text-decoration: none;
+        color: #213b93;
+        color: $val;
+      }
+    }
+  }
+  @if ($key == "active") {
+    .link-sm-#{$key} {
+      font-size: 14px;
+      @include link();
+      text-decoration: none;
+      color: $val;
+      &:active::before {
+        @extend %angle-link;
+      }
+    }
+    .link-m-#{$key} {
+      font-size: 16px;
+      @include link();
+      text-decoration: none;
+      color: $val;
+      &:active::before {
+        @extend %angle-link;
+      }
+    }
+    .link-lg-#{$key} {
+      font-size: 16px;
+      @include link();
+      text-decoration: none;
+      color: $val;
+      &:active::before {
+        @extend %angle-link;
+      }
+    }
+  }
+
+  @if ($key == "disabled") {
+    .link-sm-disabled {
+      @include link();
+      font-size: 14px;
+      text-decoration: none;
+      color: $val !important;
+      cursor: not-allowed;
+      pointer-events: unset;
+    }
+    .link-m-#{$key} {
+      @include link();
+      font-size: 16px;
+      text-decoration: none;
+      color: $val !important;
+      cursor: not-allowed;
+      pointer-events: unset;
+    }
+    .link-lg-#{$key} {
+      &:disabled {
+        @include link();
+        font-size: 16px;
+        text-decoration: none;
+        color: $val !important;
+        cursor: not-allowed;
+        pointer-events: unset;
+      }
+    }
+  }
+
+  @if ($key == "loading") {
+    .link-sm-#{$key} {
+      @include link();
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: unset;
+      color: $val;
+    }
+    .link-m-#{$key} {
+      @include link();
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: unset;
+      color: $val;
+    }
+    .link-lg-#{$key} {
+      @include link();
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: unset;
+      color: $val;
+    }
+  }
+}
+
+/*=====  End of buttons  ======*/

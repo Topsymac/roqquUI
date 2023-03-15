@@ -1,0 +1,1320 @@
+/*=============================================
+=            blur            =
+=============================================*/
+.blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+/*=====  End of blur  ======*/
+/*=============================================
+=            Shadows            =
+=============================================*/
+.box-shadow {
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.1) 0px 4px 20px -2px rgba(50, 50, 71, 0.08);
+}
+
+/*=====  End of Shadows  ======*/
+.radius-sm {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.radius-xlg {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.radius-xxlg {
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.radius-pill {
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+/*=============================================
+=            buttons            =
+=============================================*/
+.btn-outlined-dark-lg-active:active::before, .btn-outlined-dark-m-active:active::before, .btn-outlined-dark-sm-active:active::before, .btn-secondary-lg-active:active::before, .btn-secondary-m-active:active::before, .btn-secondary-sm-active:active::before, .btn-primary-lg-active:active::before, .btn-primary-m-active:active::before, .btn-primary-sm-active:active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 24px;
+  height: 24px;
+  opacity: 0.24;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.btn-primary-sm {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+
+.btn-primary-m {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+
+.btn-primary-lg {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+
+.btn-primary-sm-hover {
+  font-size: 14px;
+  padding: 8px;
+}
+.btn-primary-sm-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(90deg, #dd568d 0%, #7847e1 47.92%, #3e32c1 100%);
+}
+
+.btn-primary-m-hover {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.btn-primary-m-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(90deg, #dd568d 0%, #7847e1 47.92%, #3e32c1 100%);
+}
+
+.btn-primary-lg-hover {
+  font-size: 16px;
+  padding: 16px;
+}
+.btn-primary-lg-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(90deg, #dd568d 0%, #7847e1 47.92%, #3e32c1 100%);
+}
+
+.btn-primary-sm-active {
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+.btn-primary-m-active {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+.btn-primary-lg-active {
+  font-size: 16px;
+  padding: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+.btn-primary-sm-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  background: linear-gradient(90deg, rgba(221, 86, 141, 0.24) 0%, rgba(120, 71, 225, 0.24) 47.92%, rgba(62, 50, 193, 0.24) 100%) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-primary-m-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, rgba(221, 86, 141, 0.24) 0%, rgba(120, 71, 225, 0.24) 47.92%, rgba(62, 50, 193, 0.24) 100%) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-primary-lg-disabled:disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  background: linear-gradient(90deg, rgba(221, 86, 141, 0.24) 0%, rgba(120, 71, 225, 0.24) 47.92%, rgba(62, 50, 193, 0.24) 100%) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-primary-sm-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  padding: 8px;
+  font-weight: unset;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+
+.btn-primary-m-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  font-weight: unset;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+
+.btn-primary-m-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  font-weight: unset;
+  background: linear-gradient(90deg, #483beb 0%, #7847e1 47.92%, #dd568d 96.35%);
+}
+
+/*=====  End of buttons  ======*/
+/*=============================================
+=            buttons            =
+=============================================*/
+.btn-outlined-dark-lg-active:active::before, .btn-outlined-dark-m-active:active::before, .btn-outlined-dark-sm-active:active::before, .btn-secondary-lg-active:active::before, .btn-secondary-m-active:active::before, .btn-secondary-sm-active:active::before, .btn-primary-sm-active:active::before, .btn-primary-m-active:active::before, .btn-primary-lg-active:active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 24px;
+  height: 24px;
+  opacity: 0.24;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.btn-secondary-sm {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  background: #2764FF;
+}
+
+.btn-secondary-m {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: #2764FF;
+}
+
+.btn-secondary-lg {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  background: #2764FF;
+}
+
+.btn-secondary-sm-hover {
+  font-size: 14px;
+  padding: 8px;
+}
+.btn-secondary-sm-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #213B93;
+}
+
+.btn-secondary-m-hover {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.btn-secondary-m-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #213B93;
+}
+
+.btn-secondary-lg-hover {
+  font-size: 16px;
+  padding: 16px;
+}
+.btn-secondary-lg-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #213B93;
+}
+
+.btn-secondary-sm-active {
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #2764FF;
+}
+.btn-secondary-m-active {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #2764FF;
+}
+.btn-secondary-lg-active {
+  font-size: 16px;
+  padding: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #2764FF;
+}
+.btn-secondary-sm-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  background: rgba(39, 100, 255, 0.24) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-secondary-m-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: rgba(39, 100, 255, 0.24) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-secondary-lg-disabled:disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  background: rgba(39, 100, 255, 0.24) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-secondary-sm-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  padding: 8px;
+  font-weight: unset;
+  background: #2764FF;
+}
+
+.btn-secondary-m-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  font-weight: unset;
+  background: #2764FF;
+}
+
+.btn-secondary-m-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  font-weight: unset;
+  background: #2764FF;
+}
+
+/*=====  End of buttons  ======*/
+/*=============================================
+=            buttons            =
+=============================================*/
+.btn-outlined-light-lg-active:active::before, .btn-outlined-light-m-active:active::before, .btn-outlined-light-sm-active:active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background: #2764ff;
+  opacity: 0.16;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.btn-outlined-light-sm {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #2764FF;
+}
+
+.btn-outlined-light-m {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid #2764FF;
+}
+
+.btn-outlined-light-lg {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid #2764FF;
+}
+
+.btn-outlined-light-sm-hover {
+  font-size: 14px;
+  padding: 8px;
+}
+.btn-outlined-light-sm-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  color: #213b93;
+  border: 1px solid #213B93;
+}
+
+.btn-outlined-light-m-hover {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.btn-outlined-light-m-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  color: #213b93;
+  border: 1px solid #213B93;
+}
+
+.btn-outlined-light-lg-hover {
+  font-size: 16px;
+  padding: 16px;
+}
+.btn-outlined-light-lg-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  color: #213b93;
+  border: 1px solid #213B93;
+}
+
+.btn-outlined-light-sm-active {
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid #2764FF;
+}
+.btn-outlined-light-m-active {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid #2764FF;
+}
+.btn-outlined-light-lg-active {
+  font-size: 16px;
+  padding: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid #2764FF;
+}
+.btn-outlined-light-sm-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid rgba(39, 100, 255, 0.24) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-outlined-light-m-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid rgba(39, 100, 255, 0.24) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-outlined-light-lg-disabled:disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid rgba(39, 100, 255, 0.24) !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-outlined-light-sm-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  padding: 8px;
+  padding: 8px;
+  font-weight: unset;
+  border: 1px solid #2764FF;
+}
+
+.btn-outlined-light-m-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 8px 16px;
+  font-weight: unset;
+  border: 1px solid #2764FF;
+}
+
+.btn-outlined-light-lg-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  font-weight: unset;
+  border: 1px solid #2764FF;
+}
+
+/*=====  End of buttons  ======*/
+/*=============================================
+=            buttons            =
+=============================================*/
+.btn-outlined-dark-lg-active:active::before, .btn-outlined-dark-m-active:active::before, .btn-outlined-dark-sm-active:active::before, .btn-primary-sm-active:active::before, .btn-primary-m-active:active::before, .btn-primary-lg-active:active::before, .btn-secondary-sm-active:active::before, .btn-secondary-m-active:active::before, .btn-secondary-lg-active:active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background: #FFFFFF;
+  opacity: 0.16;
+}
+
+.btn-outlined-dark-sm {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  color: #A7B1BC;
+  background: #1C2127;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #737A91;
+}
+
+.btn-outlined-dark-m {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #1C2127;
+  color: #A7B1BC;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid #737A91;
+}
+
+.btn-outlined-dark-lg {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #1C2127;
+  color: #A7B1BC;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid #737A91;
+}
+
+.btn-outlined-dark-sm-hover {
+  font-size: 14px;
+  padding: 8px;
+}
+.btn-outlined-dark-sm-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #20252B;
+  color: #737A91;
+  border: 1px solid #737A91;
+}
+
+.btn-outlined-dark-m-hover {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.btn-outlined-dark-m-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #20252B;
+  color: #737A91;
+  border: 1px solid #737A91;
+}
+
+.btn-outlined-dark-lg-hover {
+  font-size: 16px;
+  padding: 16px;
+}
+.btn-outlined-dark-lg-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #20252B;
+  color: #737A91;
+  border: 1px solid #737A91;
+}
+
+.btn-outlined-dark-sm-active {
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid #737A91;
+  background: #1C2127;
+}
+.btn-outlined-dark-m-active {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid #737A91;
+  background: #1C2127;
+}
+.btn-outlined-dark-lg-active {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  padding: 16px;
+  background: #1C2127;
+  border: 1px solid #737A91;
+}
+.btn-outlined-dark-sm-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #1C2127;
+  color: #393D41;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #393D41 !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-outlined-dark-m-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #1C2127;
+  color: #393D41;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid #393D41 !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-outlined-dark-lg-disabled:disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #1C2127;
+  color: #393D41;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid #393D41 !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.btn-outlined-dark-sm-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #1C2127;
+  font-size: 14px;
+  padding: 8px;
+  padding: 8px;
+  font-weight: unset;
+  border: 1px solid #737A91;
+}
+
+.btn-outlined-dark-m-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #1C2127;
+  font-size: 16px;
+  padding: 8px 16px;
+  font-weight: unset;
+  border: 1px solid #737A91;
+}
+
+.btn-outlined-dark-lg-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  background: #1C2127;
+  font-size: 16px;
+  padding: 16px;
+  font-weight: unset;
+  border: 1px solid #737A91;
+}
+
+/*=====  End of buttons  ======*/
+/*=============================================
+=            buttons            =
+=============================================*/
+.link-lg-active:active::before, .link-m-active:active::before, .link-sm-active:active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background: #2764ff;
+  opacity: 0.16;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.link-sm {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  text-decoration: none;
+  color: #2764FF;
+}
+
+.link-m {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  color: #2764FF;
+}
+
+.link-lg {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  color: #2764FF;
+}
+
+.link-sm-hover {
+  font-size: 14px;
+}
+.link-sm-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  text-decoration: none;
+  color: #213B93;
+}
+
+.link-m-hover {
+  font-size: 16px;
+}
+.link-m-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  text-decoration: none;
+  color: #213b93;
+  color: #213B93;
+}
+
+.link-lg-hover {
+  font-size: 16px;
+}
+.link-lg-hover:hover {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  text-decoration: none;
+  color: #213b93;
+  color: #213B93;
+}
+
+.link-sm-active {
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  text-decoration: none;
+  color: #2764FF;
+}
+.link-m-active {
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  text-decoration: none;
+  color: #2764FF;
+}
+.link-lg-active {
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  text-decoration: none;
+  color: #2764FF;
+}
+.link-sm-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  text-decoration: none;
+  color: #2764FF !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.link-m-disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  color: #2764FF !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.link-lg-disabled:disabled {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  color: #2764FF !important;
+  cursor: not-allowed;
+  pointer-events: unset;
+}
+
+.link-sm-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: unset;
+  color: #2764FF;
+}
+
+.link-m-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: unset;
+  color: #2764FF;
+}
+
+.link-lg-loading {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: 700;
+  gap: 8px;
+  color: #2764ff;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: unset;
+  color: #2764FF;
+}
+
+/*=====  End of buttons  ======*/
