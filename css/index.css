@@ -1,41 +1,41 @@
 .text-primary_blue {
-  color: #2764FF;
+  color: #2764ff;
 }
 
 .bg-primary_blue {
-  background-color: #2764FF;
+  background-color: #2764ff;
 }
 
 .text-primary_black {
-  color: #1C2127;
+  color: #1c2127;
 }
 
 .bg-primary_black {
-  background-color: #1C2127;
+  background-color: #1c2127;
 }
 
 .text-primary_pink {
-  color: #FB0B67;
+  color: #fb0b67;
 }
 
 .bg-primary_pink {
-  background-color: #FB0B67;
+  background-color: #fb0b67;
 }
 
 .text-primary_yellow {
-  color: #FFB918;
+  color: #ffb918;
 }
 
 .bg-primary_yellow {
-  background-color: #FFB918;
+  background-color: #ffb918;
 }
 
 .text-primary_chill {
-  color: #85D1F0;
+  color: #85d1f0;
 }
 
 .bg-primary_chill {
-  background-color: #85D1F0;
+  background-color: #85d1f0;
 }
 
 .text-primary_white {
@@ -47,35 +47,35 @@
 }
 
 .text-border_grey {
-  color: #F5F5FE;
+  color: #f5f5fe;
 }
 
 .bg-border_grey {
-  background-color: #F5F5FE;
+  background-color: #f5f5fe;
 }
 
 .text-input_border {
-  color: #CFD9E4;
+  color: #cfd9e4;
 }
 
 .bg-input_border {
-  background-color: #CFD9E4;
+  background-color: #cfd9e4;
 }
 
 .text-secondary_pink {
-  color: #530D35;
+  color: #530d35;
 }
 
 .bg-secondary_pink {
-  background-color: #530D35;
+  background-color: #530d35;
 }
 
 .text-secondary_blue {
-  color: #213B93;
+  color: #213b93;
 }
 
 .bg-secondary_blue {
-  background-color: #213B93;
+  background-color: #213b93;
 }
 
 .text-secondary_black {
@@ -87,17 +87,57 @@
 }
 
 .text-secondary_yellow {
-  color: #C49344;
+  color: #c49344;
 }
 
 .bg-secondary_yellow {
-  background-color: #C49344;
+  background-color: #c49344;
 }
 
 .text-secondary_chill {
-  color: #5C8DA4;
+  color: #5c8da4;
 }
 
 .bg-secondary_chill {
-  background-color: #5C8DA4;
+  background-color: #5c8da4;
+}
+
+.text-primary {
+  color: #1c2127;
+}
+
+.text-blue {
+  color: #2764ff;
+}
+
+.text-yellow {
+  color: #ffb918;
+}
+
+.text-chill {
+  color: #85d1f0;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-pink {
+  color: #530d35;
+}
+
+.text-secondary_blue {
+  color: #213b93;
+}
+
+.text-secondary_black {
+  color: #000000;
+}
+
+.text-secondary_yellow {
+  color: #c49344;
+}
+
+.text-secondary_chill {
+  color: #5c8da4;
 }
